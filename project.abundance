@@ -17,7 +17,7 @@
             "ioValues": [
                 {
                     "name": "number or geometry",
-                    "ioValue": "f1d55c2d-f16b-4f93-824b-cf4cde1d2eb6"
+                    "ioValue": "b87a5414-feb3-4be4-a87b-9ad3f2abcef0"
                 }
             ],
             "description": "Connect geometry here to make it available in the next level up. "
@@ -71,8 +71,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.19781221513217867,
-            "y": 0.5111821086261981,
+            "x": 0.186873290793072,
+            "y": 0.4824281150159744,
             "uniqueID": "252dbcef-7edb-4384-a848-963dea27cb82",
             "ioValues": [
                 {
@@ -81,34 +81,16 @@
                 },
                 {
                     "name": "height",
-                    "ioValue": 16
+                    "ioValue": 15.5
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negitive. "
         },
         {
-            "atomType": "Difference",
-            "name": "Difference",
-            "x": 0.3122641509433962,
-            "y": 0.5227722772277228,
-            "uniqueID": "f1d55c2d-f16b-4f93-824b-cf4cde1d2eb6",
-            "ioValues": [
-                {
-                    "name": "geometry1",
-                    "ioValue": "252dbcef-7edb-4384-a848-963dea27cb82"
-                },
-                {
-                    "name": "geometry2",
-                    "ioValue": ""
-                }
-            ],
-            "description": "Subtracts shape two from shape one."
-        },
-        {
             "atomType": "Export",
             "name": "Export",
-            "x": 0.39622641509433965,
-            "y": 0.21782178217821782,
+            "x": 0.40200546946216953,
+            "y": 0.22044728434504793,
             "uniqueID": "26bfa375-66cf-45da-b2be-05031a19a667",
             "ioValues": [
                 {
@@ -132,7 +114,7 @@
             "type": "STEP",
             "resolution": 96,
             "importIndex": 0,
-            "partName": "M4_Roller"
+            "partName": "M4_Roller_axle"
         },
         {
             "atomType": "Export",
@@ -143,7 +125,7 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": "f1d55c2d-f16b-4f93-824b-cf4cde1d2eb6"
+                    "ioValue": "b87a5414-feb3-4be4-a87b-9ad3f2abcef0"
                 },
                 {
                     "name": "Resolution (dpi)",
@@ -173,7 +155,7 @@
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 8
+                    "ioValue": 8.3
                 }
             ],
             "description": "Creates a new circle."
@@ -181,20 +163,38 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.19325432999088424,
-            "y": 0.7124600638977635,
+            "x": 0.19234275296262535,
+            "y": 0.7220447284345047,
             "uniqueID": "de33f287-7d5a-4e1c-bf7d-c1c01f7109c4",
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": ""
+                    "ioValue": "805af224-eec6-4704-85ff-ab5a24d2fe58"
                 },
                 {
                     "name": "height",
-                    "ioValue": 17
+                    "ioValue": 15.5
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negitive. "
+        },
+        {
+            "atomType": "Difference",
+            "name": "Difference",
+            "x": 0.3290793072014585,
+            "y": 0.48881789137380194,
+            "uniqueID": "b87a5414-feb3-4be4-a87b-9ad3f2abcef0",
+            "ioValues": [
+                {
+                    "name": "geometry1",
+                    "ioValue": "252dbcef-7edb-4384-a848-963dea27cb82"
+                },
+                {
+                    "name": "geometry2",
+                    "ioValue": "de33f287-7d5a-4e1c-bf7d-c1c01f7109c4"
+                }
+            ],
+            "description": "Subtracts shape two from shape one."
         }
     ],
     "allConnectors": [
@@ -224,20 +224,34 @@
             "ap2Name": "geometry1",
             "ap2Primary": false,
             "ap1ID": "252dbcef-7edb-4384-a848-963dea27cb82",
-            "ap2ID": "f1d55c2d-f16b-4f93-824b-cf4cde1d2eb6"
+            "ap2ID": "b87a5414-feb3-4be4-a87b-9ad3f2abcef0"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": "805af224-eec6-4704-85ff-ab5a24d2fe58",
+            "ap2ID": "de33f287-7d5a-4e1c-bf7d-c1c01f7109c4"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry2",
+            "ap2Primary": false,
+            "ap1ID": "de33f287-7d5a-4e1c-bf7d-c1c01f7109c4",
+            "ap2ID": "b87a5414-feb3-4be4-a87b-9ad3f2abcef0"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap2Primary": false,
-            "ap1ID": "f1d55c2d-f16b-4f93-824b-cf4cde1d2eb6",
+            "ap1ID": "b87a5414-feb3-4be4-a87b-9ad3f2abcef0",
             "ap2ID": "f6df1ef4-7c1b-4dd3-b9fe-eb35c2fced85"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "number or geometry",
             "ap2Primary": false,
-            "ap1ID": "f1d55c2d-f16b-4f93-824b-cf4cde1d2eb6",
+            "ap1ID": "b87a5414-feb3-4be4-a87b-9ad3f2abcef0",
             "ap2ID": "86352999-af30-4dc8-8404-556d04bbe5db"
         }
     ],
