@@ -39,8 +39,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.1858490566037736,
-            "y": 0.297029702970297,
+            "x": 0.19781221513217867,
+            "y": 0.17891373801916932,
             "uniqueID": "b71580cf-d649-4ff0-8042-ff25ac4b0e58",
             "ioValues": [
                 {
@@ -71,8 +71,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.186873290793072,
-            "y": 0.4824281150159744,
+            "x": 0.1969006381039198,
+            "y": 0.5750798722044729,
             "uniqueID": "252dbcef-7edb-4384-a848-963dea27cb82",
             "ioValues": [
                 {
@@ -89,13 +89,13 @@
         {
             "atomType": "Export",
             "name": "Export",
-            "x": 0.40200546946216953,
-            "y": 0.22044728434504793,
+            "x": 0.6672743846855059,
+            "y": 0.268370607028754,
             "uniqueID": "26bfa375-66cf-45da-b2be-05031a19a667",
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": "b71580cf-d649-4ff0-8042-ff25ac4b0e58"
+                    "ioValue": ""
                 },
                 {
                     "name": "Resolution (dpi)",
@@ -103,7 +103,7 @@
                 },
                 {
                     "name": "Part Name",
-                    "ioValue": "M4_Roller_axle"
+                    "ioValue": "M4_Roller"
                 },
                 {
                     "name": "File Type",
@@ -114,13 +114,13 @@
             "type": "STEP",
             "resolution": 96,
             "importIndex": 0,
-            "partName": "M4_Roller_axle"
+            "partName": "M4_Roller"
         },
         {
             "atomType": "Export",
             "name": "Export",
-            "x": 0.42570647219690066,
-            "y": 0.792332268370607,
+            "x": 0.5405651777575206,
+            "y": 0.7891373801916932,
             "uniqueID": "f6df1ef4-7c1b-4dd3-b9fe-eb35c2fced85",
             "ioValues": [
                 {
@@ -155,7 +155,7 @@
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 8.3
+                    "ioValue": 8
                 }
             ],
             "description": "Creates a new circle."
@@ -181,8 +181,8 @@
         {
             "atomType": "Difference",
             "name": "Difference",
-            "x": 0.3290793072014585,
-            "y": 0.48881789137380194,
+            "x": 0.43755697356426615,
+            "y": 0.40894568690095845,
             "uniqueID": "b87a5414-feb3-4be4-a87b-9ad3f2abcef0",
             "ioValues": [
                 {
@@ -191,7 +191,7 @@
                 },
                 {
                     "name": "geometry2",
-                    "ioValue": "de33f287-7d5a-4e1c-bf7d-c1c01f7109c4"
+                    "ioValue": ""
                 }
             ],
             "description": "Subtracts shape two from shape one."
@@ -204,13 +204,6 @@
             "ap2Primary": true,
             "ap1ID": "d61a5247-c624-4027-893b-1b81ad16dc9e",
             "ap2ID": "b71580cf-d649-4ff0-8042-ff25ac4b0e58"
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": false,
-            "ap1ID": "b71580cf-d649-4ff0-8042-ff25ac4b0e58",
-            "ap2ID": "26bfa375-66cf-45da-b2be-05031a19a667"
         },
         {
             "ap1Name": "geometry",
@@ -232,13 +225,6 @@
             "ap2Primary": true,
             "ap1ID": "805af224-eec6-4704-85ff-ab5a24d2fe58",
             "ap2ID": "de33f287-7d5a-4e1c-bf7d-c1c01f7109c4"
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry2",
-            "ap2Primary": false,
-            "ap1ID": "de33f287-7d5a-4e1c-bf7d-c1c01f7109c4",
-            "ap2ID": "b87a5414-feb3-4be4-a87b-9ad3f2abcef0"
         },
         {
             "ap1Name": "geometry",
