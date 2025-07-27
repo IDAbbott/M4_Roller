@@ -31,7 +31,7 @@
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 6
+                    "ioValue": 8
                 }
             ],
             "description": "Creates a new circle."
@@ -57,8 +57,8 @@
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.08537735849056605,
-            "y": 0.6653465346534654,
+            "x": 0.08204193254329992,
+            "y": 0.5303514376996805,
             "uniqueID": "1bf2835a-7c10-40fd-96df-895c76a696e0",
             "ioValues": [
                 {
@@ -71,8 +71,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.19481132075471697,
-            "y": 0.6554455445544555,
+            "x": 0.19781221513217867,
+            "y": 0.5111821086261981,
             "uniqueID": "252dbcef-7edb-4384-a848-963dea27cb82",
             "ioValues": [
                 {
@@ -99,7 +99,7 @@
                 },
                 {
                     "name": "geometry2",
-                    "ioValue": "b71580cf-d649-4ff0-8042-ff25ac4b0e58"
+                    "ioValue": ""
                 }
             ],
             "description": "Subtracts shape two from shape one."
@@ -163,6 +163,38 @@
             "resolution": 96,
             "importIndex": 0,
             "partName": "M4_Roller"
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.07930720145852325,
+            "y": 0.7731629392971245,
+            "uniqueID": "805af224-eec6-4704-85ff-ab5a24d2fe58",
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 8
+                }
+            ],
+            "description": "Creates a new circle."
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.19325432999088424,
+            "y": 0.7124600638977635,
+            "uniqueID": "de33f287-7d5a-4e1c-bf7d-c1c01f7109c4",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": ""
+                },
+                {
+                    "name": "height",
+                    "ioValue": 17
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
         }
     ],
     "allConnectors": [
@@ -172,13 +204,6 @@
             "ap2Primary": true,
             "ap1ID": "d61a5247-c624-4027-893b-1b81ad16dc9e",
             "ap2ID": "b71580cf-d649-4ff0-8042-ff25ac4b0e58"
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry2",
-            "ap2Primary": false,
-            "ap1ID": "b71580cf-d649-4ff0-8042-ff25ac4b0e58",
-            "ap2ID": "f1d55c2d-f16b-4f93-824b-cf4cde1d2eb6"
         },
         {
             "ap1Name": "geometry",
