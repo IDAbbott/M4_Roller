@@ -14,7 +14,12 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": "86352999-af30-4dc8-8404-556d04bbe5db",
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "f1d55c2d-f16b-4f93-824b-cf4cde1d2eb6"
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -116,6 +121,36 @@
                 },
                 {
                     "name": "Part Name",
+                    "ioValue": "M4_Roller_axle"
+                },
+                {
+                    "name": "File Type",
+                    "ioValue": "STEP"
+                }
+            ],
+            "description": "Export Atom, let's you choose a type of file to Export.",
+            "type": "STEP",
+            "resolution": 96,
+            "importIndex": 0,
+            "partName": "M4_Roller_axle"
+        },
+        {
+            "atomType": "Export",
+            "name": "Export",
+            "x": 0.42547169811320756,
+            "y": 0.801980198019802,
+            "uniqueID": "f6df1ef4-7c1b-4dd3-b9fe-eb35c2fced85",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "f1d55c2d-f16b-4f93-824b-cf4cde1d2eb6"
+                },
+                {
+                    "name": "Resolution (dpi)",
+                    "ioValue": 96
+                },
+                {
+                    "name": "Part Name",
                     "ioValue": "M4_Roller"
                 },
                 {
@@ -165,10 +200,24 @@
             "ap2Primary": false,
             "ap1ID": "252dbcef-7edb-4384-a848-963dea27cb82",
             "ap2ID": "f1d55c2d-f16b-4f93-824b-cf4cde1d2eb6"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": false,
+            "ap1ID": "f1d55c2d-f16b-4f93-824b-cf4cde1d2eb6",
+            "ap2ID": "f6df1ef4-7c1b-4dd3-b9fe-eb35c2fced85"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": "f1d55c2d-f16b-4f93-824b-cf4cde1d2eb6",
+            "ap2ID": "86352999-af30-4dc8-8404-556d04bbe5db"
         }
     ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
-    "compiledBom": {},
+    "compiledBom": [],
     "filetypeVersion": 1
 }
