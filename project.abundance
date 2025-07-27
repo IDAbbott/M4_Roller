@@ -132,7 +132,7 @@
             "type": "STEP",
             "resolution": 96,
             "importIndex": 0,
-            "partName": "M4_Roller_axle"
+            "partName": "M4_Roller"
         },
         {
             "atomType": "Export",
