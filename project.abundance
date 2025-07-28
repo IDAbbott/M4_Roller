@@ -25,13 +25,13 @@
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.08204193254329992,
-            "y": 0.5303514376996805,
+            "x": 0.08113035551504102,
+            "y": 0.5463258785942492,
             "uniqueID": "1bf2835a-7c10-40fd-96df-895c76a696e0",
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 15
+                    "ioValue": 14.5
                 }
             ],
             "description": "Creates a new circle."
