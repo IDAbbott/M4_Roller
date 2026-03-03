@@ -48,8 +48,8 @@
     },
     {
       "atomType": "Export",
-      "x": 0.555452865064695,
-      "y": 0.7389473684210527,
+      "x": 0.5568391866913124,
+      "y": 0.848421052631579,
       "uniqueID": "f6df1ef4-7c1b-4dd3-b9fe-eb35c2fced85",
       "ioValues": [
         {
@@ -67,14 +67,14 @@
         },
         {
           "name": "Part Name",
-          "ioValue": "M4_Roller",
-          "currentEquation": "M4_Roller"
+          "ioValue": "M4_Roller_Gear",
+          "currentEquation": "M4_Roller_Gear"
         }
       ],
       "type": "STEP",
       "resolution": 96,
       "importIndex": 0,
-      "partName": "M4_Roller"
+      "partName": "M4_Roller_Gear"
     },
     {
       "atomType": "Circle",
@@ -167,8 +167,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.4006469500924214,
-      "y": 0.6336842105263157,
+      "x": 0.4015711645101664,
+      "y": 0.7705263157894737,
       "uniqueID": "id-43",
       "ioValues": [
         {
@@ -209,6 +209,52 @@
           "ioValue": 0
         }
       ]
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.48798521256931604,
+      "y": 0.24,
+      "uniqueID": "id-55",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": null
+        }
+      ]
+    },
+    {
+      "atomType": "Export",
+      "x": 0.61090573012939,
+      "y": 0.27578947368421053,
+      "uniqueID": "id-60",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "File Type",
+          "ioValue": "STL",
+          "currentEquation": "STL"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "M4_Roller_Smooth",
+          "currentEquation": "M4_Roller_Smooth"
+        }
+      ],
+      "type": null,
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "M4_Roller_Smooth"
     }
   ],
   "allConnectors": [
@@ -231,6 +277,16 @@
       "ap2Name": "Shape 2",
       "ap1ID": "de33f287-7d5a-4e1c-bf7d-c1c01f7109c4",
       "ap2ID": "id-43"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "de33f287-7d5a-4e1c-bf7d-c1c01f7109c4",
+      "ap2ID": "id-55"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "b2dfc5a9-4f26-4969-b611-1bfcbfbc66ad",
+      "ap2ID": "id-55"
     },
     {
       "ap2Name": "Shape 3",
@@ -261,6 +317,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-49",
       "ap2ID": "de33f287-7d5a-4e1c-bf7d-c1c01f7109c4"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-55",
+      "ap2ID": "id-60"
     }
   ],
   "unitsKey": "MM",
