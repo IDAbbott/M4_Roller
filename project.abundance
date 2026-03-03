@@ -190,6 +190,18 @@
         }
       ],
       "unionType": "Fusion"
+    },
+    {
+      "atomType": "Import",
+      "x": 0.4801293900184843,
+      "y": 0.28210526315789475,
+      "uniqueID": "id-27",
+      "fileName": "M4_Roller.step",
+      "name": "Import",
+      "type": "STEP",
+      "repoOwner": "IDAbbott",
+      "repoName": "M4_Roller",
+      "SVGwidth": 10
     }
   ],
   "allConnectors": [
