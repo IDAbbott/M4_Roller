@@ -129,76 +129,9 @@
       ]
     },
     {
-      "atomType": "Fusion",
-      "x": 0.3974475843208751,
-      "y": 0.6325878594249201,
-      "uniqueID": "52798b02-b40e-4521-b364-b885d920d2bd",
-      "ioValues": [
-        {
-          "name": "Shape 1",
-          "ioValue": {
-            "geometry": "move-extrude-circle-7.15-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-15.5-0-0-4.5",
-            "dimension": "3D",
-            "tags": [],
-            "plane": {
-              "origin": [
-                0,
-                0,
-                0
-              ],
-              "xDir": [
-                1,
-                0,
-                0
-              ],
-              "normal": [
-                0,
-                0,
-                1
-              ]
-            },
-            "color": "#aad7f2",
-            "bom": []
-          }
-        },
-        {
-          "name": "Shape 2",
-          "ioValue": {
-            "geometry": "extrude-circle-4-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-24",
-            "dimension": "3D",
-            "tags": [],
-            "plane": {
-              "origin": [
-                0,
-                0,
-                0
-              ],
-              "xDir": [
-                1,
-                0,
-                0
-              ],
-              "normal": [
-                0,
-                0,
-                1
-              ]
-            },
-            "color": "#aad7f2",
-            "bom": []
-          }
-        },
-        {
-          "name": "Shape 3",
-          "ioValue": null
-        }
-      ],
-      "unionType": "Fusion"
-    },
-    {
       "atomType": "Move",
-      "x": 0.20101663585951943,
-      "y": 0.8968421052631579,
+      "x": 0.2097966728280961,
+      "y": 0.8231578947368422,
       "uniqueID": "id-34",
       "ioValues": [
         {
@@ -207,15 +140,16 @@
         },
         {
           "name": "xDist",
-          "ioValue": 0
+          "ioValue": 5
         },
         {
           "name": "yDist",
-          "ioValue": 0
+          "ioValue": 0,
+          "currentEquation": "0"
         },
         {
           "name": "zDist",
-          "ioValue": 0
+          "ioValue": 10
         }
       ]
     },
@@ -224,10 +158,32 @@
       "x": 0.055452865064695,
       "y": 0.9178947368421053,
       "uniqueID": "id-41",
-      "fileName": null,
+      "fileName": "M4BeltRoller.step",
       "name": "Import",
-      "type": null,
+      "type": "STEP",
+      "repoOwner": "IDAbbott",
+      "repoName": "M4_Roller",
       "SVGwidth": 10
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.4006469500924214,
+      "y": 0.6336842105263157,
+      "uniqueID": "id-43",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 3",
+          "ioValue": null
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -241,7 +197,6 @@
       "ap1ID": "252dbcef-7edb-4384-a848-963dea27cb82",
       "ap2ID": "b2dfc5a9-4f26-4969-b611-1bfcbfbc66ad"
     },
-    null,
     {
       "ap2Name": "geometry",
       "ap1ID": "805af224-eec6-4704-85ff-ab5a24d2fe58",
@@ -250,27 +205,32 @@
     {
       "ap2Name": "Shape 2",
       "ap1ID": "de33f287-7d5a-4e1c-bf7d-c1c01f7109c4",
-      "ap2ID": "52798b02-b40e-4521-b364-b885d920d2bd"
+      "ap2ID": "id-43"
     },
     {
       "ap2Name": "Shape 1",
       "ap1ID": "b2dfc5a9-4f26-4969-b611-1bfcbfbc66ad",
-      "ap2ID": "52798b02-b40e-4521-b364-b885d920d2bd"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "52798b02-b40e-4521-b364-b885d920d2bd",
-      "ap2ID": "f6df1ef4-7c1b-4dd3-b9fe-eb35c2fced85"
-    },
-    {
-      "ap2Name": "number or geometry",
-      "ap1ID": "52798b02-b40e-4521-b364-b885d920d2bd",
-      "ap2ID": "86352999-af30-4dc8-8404-556d04bbe5db"
+      "ap2ID": "id-43"
     },
     {
       "ap2Name": "Shape 3",
       "ap1ID": "id-34",
-      "ap2ID": "52798b02-b40e-4521-b364-b885d920d2bd"
+      "ap2ID": "id-43"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-41",
+      "ap2ID": "id-34"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-43",
+      "ap2ID": "f6df1ef4-7c1b-4dd3-b9fe-eb35c2fced85"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-43",
+      "ap2ID": "86352999-af30-4dc8-8404-556d04bbe5db"
     }
   ],
   "unitsKey": "MM",
