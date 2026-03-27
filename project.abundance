@@ -90,8 +90,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.2486136783733826,
-      "y": 0.49684210526315786,
+      "x": 0.25295109612141653,
+      "y": 0.604265402843602,
       "uniqueID": "de33f287-7d5a-4e1c-bf7d-c1c01f7109c4",
       "ioValues": [
         {
@@ -106,32 +106,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.3304066543438077,
-      "y": 0.30947368421052635,
-      "uniqueID": "b2dfc5a9-4f26-4969-b611-1bfcbfbc66ad",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "xDist",
-          "ioValue": 0
-        },
-        {
-          "name": "yDist",
-          "ioValue": 0
-        },
-        {
-          "name": "zDist",
-          "ioValue": 4.5
-        }
-      ]
-    },
-    {
-      "atomType": "Move",
-      "x": 0.21256931608133087,
-      "y": 0.8189473684210526,
+      "x": 0.20826306913996626,
+      "y": 0.8175355450236967,
       "uniqueID": "id-34",
       "ioValues": [
         {
@@ -144,8 +120,7 @@
         },
         {
           "name": "yDist",
-          "ioValue": 0,
-          "currentEquation": "0"
+          "ioValue": 0
         },
         {
           "name": "zDist",
@@ -201,28 +176,11 @@
         },
         {
           "name": "yDist",
-          "ioValue": 0,
-          "currentEquation": "0"
+          "ioValue": 0
         },
         {
           "name": "zDist",
           "ioValue": 0
-        }
-      ]
-    },
-    {
-      "atomType": "Assembly",
-      "x": 0.48798521256931604,
-      "y": 0.24,
-      "uniqueID": "id-55",
-      "ioValues": [
-        {
-          "name": "Shape 1",
-          "ioValue": null
-        },
-        {
-          "name": "Shape 2",
-          "ioValue": null
         }
       ]
     },
@@ -255,6 +213,38 @@
       "resolution": 96,
       "importIndex": 0,
       "partName": "M4_Roller_Smooth"
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.2824620573355818,
+      "y": 0.4052132701421801,
+      "uniqueID": "id-107",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 30
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.4325463743676223,
+      "y": 0.2559241706161137,
+      "uniqueID": "id-111",
+      "ioValues": [
+        {
+          "name": "geometry1",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "geometry2",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -264,9 +254,9 @@
       "ap2ID": "252dbcef-7edb-4384-a848-963dea27cb82"
     },
     {
-      "ap2Name": "geometry",
+      "ap2Name": "geometry1",
       "ap1ID": "252dbcef-7edb-4384-a848-963dea27cb82",
-      "ap2ID": "b2dfc5a9-4f26-4969-b611-1bfcbfbc66ad"
+      "ap2ID": "id-111"
     },
     {
       "ap2Name": "geometry",
@@ -277,16 +267,6 @@
       "ap2Name": "Shape 2",
       "ap1ID": "de33f287-7d5a-4e1c-bf7d-c1c01f7109c4",
       "ap2ID": "id-43"
-    },
-    {
-      "ap2Name": "Shape 2",
-      "ap1ID": "de33f287-7d5a-4e1c-bf7d-c1c01f7109c4",
-      "ap2ID": "id-55"
-    },
-    {
-      "ap2Name": "Shape 1",
-      "ap1ID": "b2dfc5a9-4f26-4969-b611-1bfcbfbc66ad",
-      "ap2ID": "id-55"
     },
     {
       "ap2Name": "Shape 3",
@@ -320,7 +300,17 @@
     },
     {
       "ap2Name": "geometry",
-      "ap1ID": "id-55",
+      "ap1ID": "id-49",
+      "ap2ID": "id-107"
+    },
+    {
+      "ap2Name": "geometry2",
+      "ap1ID": "id-107",
+      "ap2ID": "id-111"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-111",
       "ap2ID": "id-60"
     }
   ],
