@@ -8,8 +8,8 @@
   "allAtoms": [
     {
       "atomType": "Output",
-      "x": 0.98,
-      "y": 0.5,
+      "x": 0.9730185497470489,
+      "y": 0.49526066350710896,
       "uniqueID": "86352999-af30-4dc8-8404-556d04bbe5db",
       "ioValues": [
         {
@@ -90,8 +90,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.25295109612141653,
-      "y": 0.604265402843602,
+      "x": 0.2015177065767285,
+      "y": 0.4620853080568721,
       "uniqueID": "de33f287-7d5a-4e1c-bf7d-c1c01f7109c4",
       "ioValues": [
         {
@@ -196,8 +196,8 @@
         },
         {
           "name": "File Type",
-          "ioValue": "STL",
-          "currentEquation": "STL"
+          "ioValue": "STEP",
+          "currentEquation": "STEP"
         },
         {
           "name": "Resolution (dpi)",
@@ -209,15 +209,15 @@
           "currentEquation": "M4_Roller_Smooth_Outer"
         }
       ],
-      "type": null,
+      "type": "STEP",
       "resolution": 96,
       "importIndex": 0,
       "partName": "M4_Roller_Smooth_Outer"
     },
     {
       "atomType": "Extrude",
-      "x": 0.2824620573355818,
-      "y": 0.4052132701421801,
+      "x": 0.20320404721753793,
+      "y": 0.33649289099526064,
       "uniqueID": "id-107",
       "ioValues": [
         {
@@ -282,8 +282,8 @@
         },
         {
           "name": "File Type",
-          "ioValue": "STL",
-          "currentEquation": "STL"
+          "ioValue": "STEP",
+          "currentEquation": "STEP"
         },
         {
           "name": "Resolution (dpi)",
@@ -295,15 +295,15 @@
           "currentEquation": "M4_Roller_Inner"
         }
       ],
-      "type": null,
+      "type": "STEP",
       "resolution": 96,
       "importIndex": 0,
       "partName": "M4_Roller_Inner"
     },
     {
       "atomType": "Assembly",
-      "x": 0.678752107925801,
-      "y": 0.45971563981042657,
+      "x": 0.6779089376053963,
+      "y": 0.443127962085308,
       "uniqueID": "id-126",
       "ioValues": [
         {
@@ -317,6 +317,38 @@
         {
           "name": "Shape 3",
           "ioValue": null
+        }
+      ]
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.15177065767284992,
+      "y": 0.6374407582938388,
+      "uniqueID": "id-142",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 8
+        },
+        {
+          "name": "y length",
+          "ioValue": 1.5
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.29679595278246207,
+      "y": 0.3578199052132701,
+      "uniqueID": "id-146",
+      "ioValues": [
+        {
+          "name": "geometry1",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "geometry2",
+          "ioValue": "__GEOMETRY_INPUT__"
         }
       ]
     }
@@ -391,6 +423,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-107",
       "ap2ID": "id-49"
+    },
+    {
+      "ap2Name": "geometry1",
+      "ap1ID": "id-107",
+      "ap2ID": "id-146"
     },
     {
       "ap2Name": "geometry",
