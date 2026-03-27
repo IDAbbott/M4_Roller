@@ -32,8 +32,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.2088724584103512,
-      "y": 0.24421052631578946,
+      "x": 0.22765598650927488,
+      "y": 0.16587677725118483,
       "uniqueID": "252dbcef-7edb-4384-a848-963dea27cb82",
       "ioValues": [
         {
@@ -162,8 +162,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.16127541589648797,
-      "y": 0.4610526315789474,
+      "x": 0.4317032040472175,
+      "y": 0.46445497630331756,
       "uniqueID": "id-49",
       "ioValues": [
         {
@@ -176,7 +176,7 @@
         },
         {
           "name": "yDist",
-          "ioValue": 0
+          "ioValue": 20
         },
         {
           "name": "zDist",
@@ -186,8 +186,8 @@
     },
     {
       "atomType": "Export",
-      "x": 0.61090573012939,
-      "y": 0.27578947368421053,
+      "x": 0.7259696458684655,
+      "y": 0.27014218009478674,
       "uniqueID": "id-60",
       "ioValues": [
         {
@@ -205,14 +205,14 @@
         },
         {
           "name": "Part Name",
-          "ioValue": "M4_Roller_Smooth",
-          "currentEquation": "M4_Roller_Smooth"
+          "ioValue": "M4_Roller_Smooth_Outer",
+          "currentEquation": "M4_Roller_Smooth_Outer"
         }
       ],
       "type": null,
       "resolution": 96,
       "importIndex": 0,
-      "partName": "M4_Roller_Smooth"
+      "partName": "M4_Roller_Smooth_Outer"
     },
     {
       "atomType": "Extrude",
@@ -245,6 +245,80 @@
           "ioValue": "__GEOMETRY_INPUT__"
         }
       ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.6247892074198989,
+      "y": 0.27488151658767773,
+      "uniqueID": "id-115",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 20
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Export",
+      "x": 0.7521079258010118,
+      "y": 0.13033175355450236,
+      "uniqueID": "id-121",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "File Type",
+          "ioValue": "STL",
+          "currentEquation": "STL"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "M4_Roller_Inner",
+          "currentEquation": "M4_Roller_Inner"
+        }
+      ],
+      "type": null,
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "M4_Roller_Inner"
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.678752107925801,
+      "y": 0.45971563981042657,
+      "uniqueID": "id-126",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 3",
+          "ioValue": null
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -261,7 +335,12 @@
     {
       "ap2Name": "geometry",
       "ap1ID": "805af224-eec6-4704-85ff-ab5a24d2fe58",
-      "ap2ID": "id-49"
+      "ap2ID": "id-107"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "805af224-eec6-4704-85ff-ab5a24d2fe58",
+      "ap2ID": "de33f287-7d5a-4e1c-bf7d-c1c01f7109c4"
     },
     {
       "ap2Name": "Shape 2",
@@ -289,19 +368,19 @@
       "ap2ID": "f6df1ef4-7c1b-4dd3-b9fe-eb35c2fced85"
     },
     {
-      "ap2Name": "number or geometry",
+      "ap2Name": "Shape 3",
       "ap1ID": "id-43",
-      "ap2ID": "86352999-af30-4dc8-8404-556d04bbe5db"
+      "ap2ID": "id-126"
     },
     {
       "ap2Name": "geometry",
       "ap1ID": "id-49",
-      "ap2ID": "de33f287-7d5a-4e1c-bf7d-c1c01f7109c4"
+      "ap2ID": "id-121"
     },
     {
-      "ap2Name": "geometry",
+      "ap2Name": "Shape 2",
       "ap1ID": "id-49",
-      "ap2ID": "id-107"
+      "ap2ID": "id-126"
     },
     {
       "ap2Name": "geometry2",
@@ -310,8 +389,28 @@
     },
     {
       "ap2Name": "geometry",
+      "ap1ID": "id-107",
+      "ap2ID": "id-49"
+    },
+    {
+      "ap2Name": "geometry",
       "ap1ID": "id-111",
+      "ap2ID": "id-115"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-111",
+      "ap2ID": "id-126"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-115",
       "ap2ID": "id-60"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-126",
+      "ap2ID": "86352999-af30-4dc8-8404-556d04bbe5db"
     }
   ],
   "unitsKey": "MM",
