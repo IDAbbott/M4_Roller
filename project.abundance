@@ -100,7 +100,8 @@
         },
         {
           "name": "height",
-          "ioValue": 20
+          "ioValue": 20,
+          "currentEquation": "20"
         }
       ]
     },
@@ -142,8 +143,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.4015711645101664,
-      "y": 0.7705263157894737,
+      "x": 0.397133220910624,
+      "y": 0.7582938388625592,
       "uniqueID": "id-43",
       "ioValues": [
         {
@@ -222,7 +223,7 @@
         },
         {
           "name": "height",
-          "ioValue": 30
+          "ioValue": 24
         }
       ]
     },
@@ -404,7 +405,7 @@
         },
         {
           "name": "height",
-          "ioValue": 30
+          "ioValue": 24
         }
       ]
     }
