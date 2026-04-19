@@ -78,20 +78,20 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.06661045531197302,
-      "y": 0.35308056872037913,
+      "x": 0.0390625,
+      "y": 0.3853658536585366,
       "uniqueID": "805af224-eec6-4704-85ff-ab5a24d2fe58",
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 7.8
+          "ioValue": 8
         }
       ]
     },
     {
       "atomType": "Extrude",
-      "x": 0.20067453625632378,
-      "y": 0.533175355450237,
+      "x": 0.1657986111111111,
+      "y": 0.7609756097560976,
       "uniqueID": "de33f287-7d5a-4e1c-bf7d-c1c01f7109c4",
       "ioValues": [
         {
@@ -106,8 +106,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.20826306913996626,
-      "y": 0.8175355450236967,
+      "x": 0.2578125,
+      "y": 0.9048780487804878,
       "uniqueID": "id-34",
       "ioValues": [
         {
@@ -130,8 +130,8 @@
     },
     {
       "atomType": "Import",
-      "x": 0.055452865064695,
-      "y": 0.9178947368421053,
+      "x": 0.017361111111111112,
+      "y": 0.9219512195121952,
       "uniqueID": "id-41",
       "fileName": "M4BeltRoller.step",
       "name": "Import",
@@ -142,8 +142,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.397133220910624,
-      "y": 0.7582938388625592,
+      "x": 0.3967013888888889,
+      "y": 0.751219512195122,
       "uniqueID": "id-43",
       "ioValues": [
         {
@@ -158,8 +158,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.4317032040472175,
-      "y": 0.46445497630331756,
+      "x": 0.5555555555555556,
+      "y": 0.49024390243902444,
       "uniqueID": "id-49",
       "ioValues": [
         {
@@ -244,8 +244,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.5733558178752108,
-      "y": 0.13744075829383887,
+      "x": 0.5703125,
+      "y": 0.13170731707317074,
       "uniqueID": "id-115",
       "ioValues": [
         {
@@ -318,8 +318,8 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.06745362563237774,
-      "y": 0.6516587677725119,
+      "x": 0.15625,
+      "y": 0.6195121951219512,
       "uniqueID": "id-142",
       "ioValues": [
         {
@@ -334,8 +334,8 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.357504215851602,
-      "y": 0.4691943127962085,
+      "x": 0.4548611111111111,
+      "y": 0.47317073170731705,
       "uniqueID": "id-146",
       "ioValues": [
         {
@@ -350,8 +350,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.2092013888888889,
-      "y": 0.6658536585365854,
+      "x": 0.2586805555555555,
+      "y": 0.5121951219512195,
       "uniqueID": "id-150",
       "ioValues": [
         {
@@ -382,8 +382,8 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.07166947723440135,
-      "y": 0.48104265402843605,
+      "x": 0.3064236111111111,
+      "y": 0.3878048780487805,
       "uniqueID": "id-223",
       "ioValues": [
         {
@@ -394,8 +394,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.21247892074198987,
-      "y": 0.4146919431279621,
+      "x": 0.3550347222222222,
+      "y": 0.4097560975609756,
       "uniqueID": "id-226",
       "ioValues": [
         {
@@ -410,8 +410,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.14496527777777776,
-      "y": 0.6609756097560976,
+      "x": 0.19618055555555555,
+      "y": 0.5146341463414634,
       "uniqueID": "id-300",
       "ioValues": [
         {
@@ -431,6 +431,35 @@
           "ioValue": 23
         }
       ]
+    },
+    {
+      "atomType": "Color",
+      "x": 0.08854166666666666,
+      "y": 0.4926829268292683,
+      "uniqueID": "id-306",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "selectedColor": "Glass"
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.10763888888888888,
+      "y": 0.8463414634146341,
+      "uniqueID": "id-309",
+      "ioValues": [
+        {
+          "name": "geometry1",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "geometry2",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -447,13 +476,9 @@
     {
       "ap2Name": "geometry",
       "ap1ID": "805af224-eec6-4704-85ff-ab5a24d2fe58",
-      "ap2ID": "id-107"
+      "ap2ID": "id-306"
     },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "805af224-eec6-4704-85ff-ab5a24d2fe58",
-      "ap2ID": "de33f287-7d5a-4e1c-bf7d-c1c01f7109c4"
-    },
+    null,
     {
       "ap2Name": "geometry1",
       "ap1ID": "de33f287-7d5a-4e1c-bf7d-c1c01f7109c4",
@@ -468,6 +493,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-41",
       "ap2ID": "id-34"
+    },
+    {
+      "ap2Name": "geometry1",
+      "ap1ID": "id-41",
+      "ap2ID": "id-309"
     },
     {
       "ap2Name": "geometry",
@@ -553,6 +583,16 @@
       "ap2Name": "geometry",
       "ap1ID": "id-300",
       "ap2ID": "id-150"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-306",
+      "ap2ID": "de33f287-7d5a-4e1c-bf7d-c1c01f7109c4"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-306",
+      "ap2ID": "id-107"
     }
   ],
   "unitsKey": "MM",
