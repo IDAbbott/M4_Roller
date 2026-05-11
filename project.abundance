@@ -77,34 +77,6 @@
       "partName": "M4_Roller_Gear"
     },
     {
-      "atomType": "Circle",
-      "x": 0.0390625,
-      "y": 0.3853658536585366,
-      "uniqueID": "805af224-eec6-4704-85ff-ab5a24d2fe58",
-      "ioValues": [
-        {
-          "name": "diameter",
-          "ioValue": 8
-        }
-      ]
-    },
-    {
-      "atomType": "Extrude",
-      "x": 0.1657986111111111,
-      "y": 0.7609756097560976,
-      "uniqueID": "de33f287-7d5a-4e1c-bf7d-c1c01f7109c4",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "height",
-          "ioValue": 25
-        }
-      ]
-    },
-    {
       "atomType": "Move",
       "x": 0.2578125,
       "y": 0.9048780487804878,
@@ -146,10 +118,6 @@
       "y": 0.751219512195122,
       "uniqueID": "id-43",
       "ioValues": [
-        {
-          "name": "Shape 1",
-          "ioValue": null
-        },
         {
           "name": "Shape 2",
           "ioValue": null
@@ -212,8 +180,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.21416526138279934,
-      "y": 0.2938388625592417,
+      "x": 0.25358045492839093,
+      "y": 0.25531914893617025,
       "uniqueID": "id-107",
       "ioValues": [
         {
@@ -334,8 +302,8 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.4532434709351306,
-      "y": 0.4609929078014185,
+      "x": 0.45577085088458297,
+      "y": 0.45862884160756506,
       "uniqueID": "id-146",
       "ioValues": [
         {
@@ -361,22 +329,6 @@
         {
           "name": "height",
           "ioValue": 2
-        }
-      ]
-    },
-    {
-      "atomType": "Difference",
-      "x": 0.35834738617200673,
-      "y": 0.6066350710900474,
-      "uniqueID": "id-154",
-      "ioValues": [
-        {
-          "name": "retain",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "remove",
-          "ioValue": "__GEOMETRY_INPUT__"
         }
       ]
     },
@@ -433,19 +385,6 @@
       ]
     },
     {
-      "atomType": "Color",
-      "x": 0.08854166666666666,
-      "y": 0.4926829268292683,
-      "uniqueID": "id-306",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        }
-      ],
-      "selectedColor": "Glass"
-    },
-    {
       "atomType": "Difference",
       "x": 0.10763888888888888,
       "y": 0.8463414634146341,
@@ -481,7 +420,7 @@
         },
         {
           "name": "zDist",
-          "ioValue": 1
+          "ioValue": 0
         }
       ]
     },
@@ -513,7 +452,32 @@
         },
         {
           "name": "height",
-          "ioValue": 2
+          "ioValue": 1
+        }
+      ]
+    },
+    {
+      "atomType": "Color",
+      "x": 0.11710193765796126,
+      "y": 0.3333333333333333,
+      "uniqueID": "id-306",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "selectedColor": "Glass"
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.047177759056444814,
+      "y": 0.38534278959810875,
+      "uniqueID": "805af224-eec6-4704-85ff-ab5a24d2fe58",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 8
         }
       ]
     }
@@ -528,16 +492,6 @@
       "ap2Name": "retain",
       "ap1ID": "252dbcef-7edb-4384-a848-963dea27cb82",
       "ap2ID": "id-111"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "805af224-eec6-4704-85ff-ab5a24d2fe58",
-      "ap2ID": "id-306"
-    },
-    {
-      "ap2Name": "retain",
-      "ap1ID": "de33f287-7d5a-4e1c-bf7d-c1c01f7109c4",
-      "ap2ID": "id-154"
     },
     {
       "ap2Name": "Shape 2",
@@ -615,24 +569,9 @@
       "ap2ID": "id-49"
     },
     {
-      "ap2Name": "remove",
-      "ap1ID": "id-150",
-      "ap2ID": "id-146"
-    },
-    {
-      "ap2Name": "remove",
-      "ap1ID": "id-150",
-      "ap2ID": "id-154"
-    },
-    {
       "ap2Name": "Shape 2",
       "ap1ID": "id-150",
       "ap2ID": "id-399"
-    },
-    {
-      "ap2Name": "Shape 1",
-      "ap1ID": "id-154",
-      "ap2ID": "id-43"
     },
     {
       "ap2Name": "geometry",
@@ -651,8 +590,18 @@
     },
     {
       "ap2Name": "geometry",
-      "ap1ID": "id-306",
-      "ap2ID": "de33f287-7d5a-4e1c-bf7d-c1c01f7109c4"
+      "ap1ID": "id-393",
+      "ap2ID": "id-404"
+    },
+    {
+      "ap2Name": "remove",
+      "ap1ID": "id-399",
+      "ap2ID": "id-146"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-404",
+      "ap2ID": "id-399"
     },
     {
       "ap2Name": "geometry",
@@ -661,13 +610,8 @@
     },
     {
       "ap2Name": "geometry",
-      "ap1ID": "id-393",
-      "ap2ID": "id-404"
-    },
-    {
-      "ap2Name": "Shape 1",
-      "ap1ID": "id-404",
-      "ap2ID": "id-399"
+      "ap1ID": "805af224-eec6-4704-85ff-ab5a24d2fe58",
+      "ap2ID": "id-306"
     }
   ],
   "unitsKey": "MM",
